@@ -55,7 +55,7 @@
   <script>
     const table=['Arnold', 'Sly', 'Dwayne', 'Vin', 'JCVD', 'Steven'];
     //initialize loop
-    let input = 100;//outside scope of array. Will throw error if passed into array without being updated
+    let input = null;
     let doingQuery = '';
    
     //loop
@@ -64,7 +64,7 @@
     //update input
     input=+prompt('Provide an Entry Number.');
     //display indexed value, or
-    if (typeof table[prompt]!== "undefined" ) {
+    if (typeof table[input]!== "undefined" ) {
 	    //update doingQuery
 	    doingQuery = prompt(`Displaying ${tabe[prompt]}. \n Would you like to make another selection y/n?`).toLowerCase();
     }
