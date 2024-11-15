@@ -20,11 +20,44 @@
 	-->
 	
 </head>
-<body>
-  <p id='table'></p>
+<body><!--Css will be wrappers in style.css-->
+  <table>
+	  <tr>
+		  <th>Slot #</th>
+		  <th>Number</th>
+	  </tr>
+	  <tr>
+		  <td>0</td>
+		  <td>Arnold</td>
+	  </tr>
+	  <tr>
+		  <td>1</td>
+		  <td>Sly</td>
+	  </tr>
+	  <tr>
+		  <td>2</td>
+		  <td>Dwayne</td>
+	  </tr>
+	  <tr>
+		  <td>3</td>
+		  <td>Vin</td>
+	  </tr>
+	  <tr>
+		  <td>4</td>
+		  <td>JCVD</td>
+	  </tr>
+	  <tr>
+		  <td>5</td>
+		  <td>Steven</td>
+	  </tr>
+  </table>
   <script>
     const table=['Arnold', 'Sly', 'Dwayne', 'Vin', 'JCVD', 'Steven'];
-    document.getElementById('table').innerHTML = `${table}`;
+   //document.getElementById('table').innerHTML = `${table}`; 
+   //Only spits list of names out in a single line separated by commas. Altering the individual strings 
+   //and outputting each individual part of the table in a loop of document.getElement seems quite redundant
+   //when I am already going to do a loop to read the array. The contents of the array will be manually 
+   //written into HTML.
   </script>
 </body>
 </html>
