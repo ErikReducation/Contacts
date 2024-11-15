@@ -1,1 +1,10 @@
+/* provide wrappers for table and goodbye*/
+table {/*font copied from w3 font demo: https://www.w3schools.com/css/css_font.asp*/
+  color:aqua;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
 
+#goodbye {/*font copied from MDN font cheatsheet: https://developer.mozilla.org/en-US/docs/Web/CSS/font*/
+  color: navy;
+  font: small-caps bold 24px/1 sans-serif;
+}
