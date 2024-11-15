@@ -51,13 +51,34 @@
 		  <td>Steven</td>
 	  </tr>
   </table>
+  <p id="goodbye"></p><!--insert goodbye here-->
   <script>
     const table=['Arnold', 'Sly', 'Dwayne', 'Vin', 'JCVD', 'Steven'];
-   //document.getElementById('table').innerHTML = `${table}`; 
-   //Only spits list of names out in a single line separated by commas. Altering the individual strings 
-   //and outputting each individual part of the table in a loop of document.getElement seems quite redundant
-   //when I am already going to do a loop to read the array. The contents of the array will be manually 
-   //written into HTML.
+    //initialize loop
+    let input = null;
+    let doingQuery = '';
+   
+    //loop
+    do {
+    
+    //update input
+    input=+prompt('Provide an Entry Number.');
+    //display indexed value, or
+    if (typeof table[prompt]!== "undefined" ) {
+	    //update doingQuery
+	    doingQuery = prompt(`Displaying ${tabe[prompt]}. \n Would you like to make another selection y/n?`).toLowercase();
+    }
+    //display error message
+    else {
+	    //update doingQuery
+	    doingQuery = prompt('That Entry is not in the Database. \n Would you like to make another selection y/n?').toLowercase();
+    }
+
+ 
+    //end inner loop    
+    } while (doingQuery=='y')
+    //done reading contacts
+    document.getElementById('goodbye').innerHTML = 'See you later alligator!';
   </script>
 </body>
 </html>
