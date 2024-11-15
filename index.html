@@ -7,7 +7,7 @@
 	<meta name="keywords" content="contacts, htmltable">
 	<meta name="author" content="Erik Rosenbalm">
 	<meta name="viewport" content="width=device-width">  
-	<title>websitetitle</title>
+	<title>Contacts</title>
 	<link href="css/style.css" rel="stylesheet" type="text/css" >
 
 	<!--Margin view. TURN THIS OFF BEFORE PUBLISHING-->
@@ -54,15 +54,17 @@
   <p id="goodbye"></p><!--insert goodbye here-->
   <script>
     const table=['Arnold', 'Sly', 'Dwayne', 'Vin', 'JCVD', 'Steven'];
+    //because prompts block out the contents of the page immediately, alert will be used to 
+    //"remind" the user of the table. Another solution is to use an event listener or delay function.
+    alert('Slot # : Number \n 1: Sly \n 2: Dwayne \n 3: Vin \n 4: JCVD \n 5: Steven');
+   
     //initialize loop
     let input = null;
     let doingQuery = '';
    
     //loop
     do {
-    //because prompts block out the contents of the page immediately, alert will be used to 
-    //"remind" the user of the table. Another solution is to use an event listener or delay function.
-    alert('Slot # : Number \n 1: Sly \n 2: Dwayne \n 3: Vin \n 4: JCVD \n 5: Steven');
+   
     //update input
     input=+prompt('Provide an Entry Number.');
     //display indexed value, or
